@@ -565,3 +565,14 @@ var Controller = function() {
 }();
 
 new Controller();
+
+// Prevent drag/scroll on mobile.
+
+function preventBehavior(e) {
+    e.preventDefault();
+};
+
+document.addEventListener("touchmove", preventBehavior, {passive: false});
+
+
+
