@@ -79,7 +79,7 @@ var Controller = function() {
     this.moveList = [];
     this.moveIndex = 0;
 
-    this.playGoCmd="go movetimes 5000";
+    this.playGoCmd="go movetime 5000";
 
     this.createEngine();
 
