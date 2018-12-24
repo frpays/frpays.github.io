@@ -216,12 +216,15 @@ var Controller = function() {
     },
 
     go() {
-      this.send(this.getCurrentSetup());
-      this.send('go infinite');
+      this.requestSearch({
+        'setup': this.getCurrentSetup(),
+        'go': 'go infinite'
+        }
+      );
     },
 
     stop() {
-      this.send('stop');
+      this.cancelSearch();
     },
 
     createEngine() {
