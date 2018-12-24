@@ -196,7 +196,7 @@ var Controller = function() {
         
         $('#playBlackBtn').prop('disabled', !play);
         $('#playWhiteBtn').prop('disabled', !play);
-        $('#takebackBtn').prop('disabled', !play);
+        $('#takebackBtn').prop('disabled', false); // not implemented
         $('#resignBtn').prop('disabled', !play);
     },
 
